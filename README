@@ -1,0 +1,32 @@
+# 为Ubuntu安装美化主题
+(这里选择Mojave-lige主题和Cupertino图标进行美化)
+
+## 安装Synaptic（新力得软件管理包）
+- 打开“Ubuntu软件，搜索Synaptic，安装
+
+## 安装dconf-editor，gnome-tweak-tool，chrome-gnome-shell
+- 打开Synaptic，分别安装即可
+
+## 调整”所有程序“位置
+- 打开dconf-editor，go to "org/gnome/shell/extensions/dash-to-dock show-apps-at-top"，开启。
+
+## 安装“Arc Menu”
+- go to "https://extensions.gnome.org"
+- 搜索“Arc Menu”
+
+## 安装Dash to Dock
+-【方法1】Ubuntu软件商店，搜索“Dash to Dock”
+-【方法2】在https://extensions.gnome.org，进行安装
+
+## 隐藏“所有程序”入口（可选）
+- 打开dconf-editor，go to "org/gnome/shell/extensions/dash-to-dock show-show-apps-button"，关闭。
+或者：
+- 打开“tweat tool->extension->Dash to Panel->Behavior”，关闭“Show Applications icon”。
+
+## 安装“User Themes”
+- 打开https://extensions.gnome.org，安装即可。
+> tweak的“外观->shell”那里，有个感叹号，安装User Themes之后感叹号会消失。
+
+## 更换系统主题
+- 创建.themes和.icons目录，把MyThemes-Icons中的Mojave-light放入.themes中，将Cupertino放入.icons中。
+- 在“Tweak”中进行切换主题和图标。
